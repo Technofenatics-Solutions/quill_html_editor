@@ -15,9 +15,7 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  ##### For image picker widget
   file_picker: ^6.1.1
-  ##### For webveiwx widget
   http: ^1.1.2
   path: ^1.9.0
   pointer_interceptor: ^0.10.1
@@ -34,22 +32,23 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: quill_html_editor
+        pluginClass: QuillHtmlEditorPlugin
+        package: com.theairbender.quill_html_editor
       ios:
-        default_package: quill_html_editor
+        pluginClass: QuillHtmlEditorPlugin
       web:
         default_package: quill_html_editor
   assets:
-      - packages/quill_html_editor/assets/camera_roll_icon.png
-      - packages/quill_html_editor/assets/h1_dark.png
-      - packages/quill_html_editor/assets/h2_dark.png
-      - packages/quill_html_editor/assets/edit_table.png
-      - packages/quill_html_editor/assets/insert_table.png
-      - packages/quill_html_editor/assets/delete_column.png
-      - packages/quill_html_editor/assets/delete_row.png
-      - packages/quill_html_editor/assets/delete_table.png
-      - packages/quill_html_editor/assets/insert_column_left.png
-      - packages/quill_html_editor/assets/insert_row_above.png
-      - packages/quill_html_editor/assets/insert_row_below.png
-      - packages/quill_html_editor/assets/insert_column_right.png
-      - packages/quill_html_editor/assets/scripts/quill_2.0.0_4_min.js
+    - packages/quill_html_editor/assets/camera_roll_icon.png
+    - packages/quill_html_editor/assets/h1_dark.png
+    - packages/quill_html_editor/assets/h2_dark.png
+    - packages/quill_html_editor/assets/edit_table.png
+    - packages/quill_html_editor/assets/insert_table.png
+    - packages/quill_html_editor/assets/delete_column.png
+    - packages/quill_html_editor/assets/delete_row.png
+    - packages/quill_html_editor/assets/delete_table.png
+    - packages/quill_html_editor/assets/insert_column_left.png
+    - packages/quill_html_editor/assets/insert_row_above.png
+    - packages/quill_html_editor/assets/insert_row_below.png
+    - packages/quill_html_editor/assets/insert_column_right.png
+    - packages/quill_html_editor/assets/scripts/quill_2.0.0_4_min.js
